@@ -1,0 +1,63 @@
+{
+  "name": "nuxt-static-boilerplate",
+  "version": "0.1.0",
+  "description": "A well-organized Nuxt template for creating fast static applications.",
+  "author": "Ivo Dolenc",
+  "license": "MIT",
+  "homepage": "https://github.com/ivodolenc/nuxt-static-boilerplate#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivodolenc/nuxt-static-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ivodolenc/nuxt-static-boilerplate/issues"
+  },
+  "keywords": [
+    "nuxt",
+    "nuxtjs",
+    "boilerplate",
+    "nuxt-boilerplate",
+    "nuxt-static-boilerplate",
+    "static-boilerplate",
+    "static-template",
+    "nuxt-template",
+    "static-app",
+    "template",
+    "static",
+    "ssr"
+  ],
+  "scripts": {
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "start": "nuxt start",
+    "lint:eslint": "eslint --ext .js,.vue .",
+    "lint:stylelint": "stylelint **/*.{vue,css,pcss}",
+    "lint:all:eslint": "yarn lint:eslint --fix",
+    "lint:all:stylelint": "yarn lint:stylelint --fix"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^3.3.2",
+    "@nuxtjs/robots": "^2.4.2",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "nuxt": "^2.14.12"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@nuxtjs/eslint-config": "^5.0.0",
+    "@nuxtjs/netlify-files": "^1.2.0",
+    "@nuxtjs/svg": "^0.1.12",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "husky": "^4.3.6",
+    "nuxt-animejs": "^1.2.1",
+    "nuxt-font-loader": "^1.1.2",
+    "nuxt-lazysizes": "^1.1.2",
+    "prettier": "^2.2.1",
+    "stylelint": "^13.8.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-standard": "^20.0.0",
+    "tailwindcss": "^2.0.1-compat"
+  }
+}
