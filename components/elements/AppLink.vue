@@ -15,7 +15,7 @@ export default {
       default: 'AppLink'
     },
     to: {
-      type: [String, Object],
+      type: String,
       default: null
     },
 

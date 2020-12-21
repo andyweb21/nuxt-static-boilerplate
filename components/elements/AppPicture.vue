@@ -1,6 +1,6 @@
 <template>
-  <figure :class="figureClass">
-    <picture :class="pictureClass" :style="aspectRatioStyle">
+  <figure :class="classFigure">
+    <picture :class="classPicture" :style="aspectRatioStyle">
       <source
         v-if="urlXxl"
         :data-srcset="lazy ? urlXxl : null"
@@ -39,7 +39,7 @@
       <img
         :data-src="lazy ? url : null"
         :src="!lazy ? url : null"
-        :class="imageClass + lazyClass"
+        :class="classImg + lazyClass"
         :alt="alt"
         :draggable="draggable"
       />
@@ -63,15 +63,15 @@ export default {
       }
     },
 
-    figureClass: {
+    classFigure: {
       type: String,
       default: 'overflow-hidden'
     },
-    pictureClass: {
+    classPicture: {
       type: String,
       default: 'relative block'
     },
-    imageClass: {
+    classImg: {
       type: String,
       default: 'absolute top-0 left-0 w-full h-full object-cover'
     },

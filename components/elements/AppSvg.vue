@@ -19,15 +19,15 @@ export default {
       default: 'http://www.w3.org/2000/svg'
     },
     viewBox: {
-      type: Number,
+      type: String,
       default: null
     },
     width: {
-      type: Number,
+      type: String,
       default: null
     },
     height: {
-      type: Number,
+      type: String,
       default: null
     },
     fill: {

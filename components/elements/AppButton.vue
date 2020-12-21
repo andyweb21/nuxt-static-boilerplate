@@ -34,7 +34,7 @@ export default {
       default: 'AppButton'
     },
     to: {
-      type: [String, Object],
+      type: String,
       default: null
     },
 
