@@ -9,7 +9,7 @@ Documentation is still in progress 🚧
 - [Server Configuration](server-configuration.md)
 - [Commands and Deployment](commands-and-deployment.md)
 - [Project Configuration](project-configuration.md)
-- [Custom Components](custom-components.md)
+- [Custom Components](custom-components/README.md)
 - [Font Preloading](font-preloading.md)
 - [JS Animations](js-animations.md)
 - [Global Data](global-data.md)
