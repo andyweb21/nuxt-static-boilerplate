@@ -43,7 +43,7 @@ export default {
   extend(config, { loaders: { vue } }) {
     const transformAssetUrlsSettings = {
       'app-picture': ['url', 'url-sm', 'url-md', 'url-lg', 'url-xl', 'url-xxl'],
-      'app-image': ['url']
+      'app-img': ['url']
     }
 
     vue.transformAssetUrls = transformAssetUrlsSettings

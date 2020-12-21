@@ -1,9 +1,9 @@
 <template>
-  <figure :class="figureClass" :style="aspectRatioStyle">
+  <figure :class="classFigure" :style="aspectRatioStyle">
     <img
       :data-src="lazy ? url : null"
       :src="!lazy ? url : null"
-      :class="imageClass + lazyClass"
+      :class="classImg + lazyClass"
       :alt="alt"
       :draggable="draggable"
     />
@@ -21,11 +21,11 @@ export default {
       type: String,
       required: true
     },
-    figureClass: {
+    classFigure: {
       type: String,
       default: 'relative block overflow-hidden'
     },
-    imageClass: {
+    classImg: {
       type: String,
       default: 'absolute top-0 left-0 w-full h-full object-cover'
     },
