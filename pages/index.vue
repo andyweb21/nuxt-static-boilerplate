@@ -13,7 +13,11 @@
 </template>
 
 <script>
+import AppPicture from '~/components/elements/AppPicture'
+
 export default {
+  components: { AppPicture },
+
   head() {
     return {
       title: this.$app.fullTitle,

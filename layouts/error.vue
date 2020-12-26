@@ -13,7 +13,11 @@
 </template>
 
 <script>
+import AppLink from '~/components/elements/AppLink'
+
 export default {
+  components: { AppLink },
+
   layout: 'errorLayout',
 
   props: {

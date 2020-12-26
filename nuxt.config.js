@@ -10,7 +10,7 @@ export default {
   /*
    ** Auto import components
    */
-  components: true,
+  components: false,
 
   /*
    ** Modern mode

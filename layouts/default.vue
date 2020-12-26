@@ -7,9 +7,13 @@
 </template>
 
 <script>
+import TheHeader from '~/components/templates/TheHeader'
+import TheFooter from '~/components/templates/TheFooter'
 import { canonical, facebook, twitter, appLdJson } from '~/utils/headData'
 
 export default {
+  components: { TheHeader, TheFooter },
+
   head() {
     const { path } = this.$route
     const pathWithSlash = path.endsWith('/') ? path : `${path}/`

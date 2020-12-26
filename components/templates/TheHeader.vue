@@ -5,5 +5,9 @@
 </template>
 
 <script>
-export default {}
+import TheNav from '~/components/templates/TheNav'
+
+export default {
+  components: { TheNav }
+}
 </script>

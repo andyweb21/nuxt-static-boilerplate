@@ -8,7 +8,11 @@
 </template>
 
 <script>
+import AppImg from '~/components/elements/AppPicture'
+
 export default {
+  components: { AppImg },
+
   head() {
     return {
       title: 'About' + this.$app.titleSeparator + this.$app.titleTemplate,

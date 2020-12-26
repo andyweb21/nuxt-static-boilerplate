@@ -12,5 +12,9 @@
 </template>
 
 <script>
-export default {}
+import AppLink from '~/components/elements/AppLink'
+
+export default {
+  components: { AppLink }
+}
 </script>
