@@ -1,4 +1,4 @@
-import routeTransition from '../../helpers/routeTransition'
+import routeTransition from '../../utils/routeTransition'
 
 export default {
   name: 'page',
