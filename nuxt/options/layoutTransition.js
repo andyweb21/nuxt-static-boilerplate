@@ -5,7 +5,6 @@
 export default {
   name: 'layout',
   mode: 'out-in'
-  // css: false,
 
   // ...routeTransition
 }

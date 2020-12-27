@@ -5,7 +5,6 @@ export default () => ({
     '@nuxtjs/netlify-files',
     '@modules/globalData',
     'nuxt-font-loader',
-    'nuxt-lazysizes',
-    'nuxt-animejs'
+    'nuxt-lazysizes'
   ]
 })

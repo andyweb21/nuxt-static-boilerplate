@@ -1,33 +1,33 @@
+// @link https://vuejs.org/v2/guide/transitions.html#Transition-Classes
+
 export default {
-  beforeEnter(el) {
-    this.$anime.set(el, {
-      opacity: 0
-    })
-  },
+  /**
+   * Starting state for enter.
+   */
+  enterClass: 'opacity-0',
 
-  enter(el, done) {
-    this.$anime({
-      targets: el,
-      opacity: [0, 1],
-      duration: 300,
-      easing: 'easeInOutSine',
-      complete: done
-    })
-  },
+  /**
+   * Ending state for enter.
+   */
+  enterToClass: 'opacity-100',
 
-  // afterEnter(el) {},
+  /**
+   * Active state for enter.
+   */
+  enterActiveClass: 'transition-opacity duration-300 ease-in',
 
-  // beforeLeave(el) {},
+  /**
+   * Starting state for leave.
+   */
+  leaveClass: 'opacity-100',
 
-  leave(el, done) {
-    this.$anime({
-      targets: el,
-      opacity: [1, 0],
-      duration: 300,
-      easing: 'easeInOutSine',
-      complete: done
-    })
-  }
+  /**
+   * Ending state for leave.
+   */
+  leaveToClass: 'opacity-0',
 
-  // afterLeave(el) {}
+  /**
+   * Active state for leave.
+   */
+  leaveActiveClass: 'transition-opacity duration-300 ease-out'
 }
