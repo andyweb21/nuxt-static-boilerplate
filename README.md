@@ -10,10 +10,10 @@ A well-organized Nuxt template for creating fast static applications.
 - Includes `advanced` settings ready for production ✨
 - Provides `pre-configured` modules and custom components 📦
 - Eliminates initial setup and `simplifies` development process 🔥
-- Offers you powerful built-in solutions such as `lazy-loading`, `font-preloading`, `javascript animations`, `global data`, `SEO` etc. 💪
+- Offers you powerful built-in solutions such as `lazy-loading`, `font-preloading`, `global data`, `SEO` etc. 💪
 - Supports modern workflow and build tools like `prettier`, `eslint`, `stylelint` etc. ⚙️
 - Helps you `organize` files and folders with an updated structure 📁
-- Comes with integrated `Tailwind CSS` framework 👨‍🔬
+- Comes with integrated `TailwindCSS` framework 👨‍🔬
 
 ## Quick Start
 
