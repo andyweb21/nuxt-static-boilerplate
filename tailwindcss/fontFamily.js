@@ -2,7 +2,7 @@
 
 module.exports = {
   sans: [
-    '"I"', // Nuxt Font Loader -> nuxt/modules/fontLoader.js
+    '"I"', // Nuxt Font Loader
     'ui-sans-serif',
     'system-ui',
     '-apple-system',

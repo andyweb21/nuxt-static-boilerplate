@@ -1,4 +1,4 @@
-const { screens } = require('./config/breakpoints')
+const screens = require('./config/default').breakpoints
 const {
   corePlugins,
   variants,
@@ -6,11 +6,10 @@ const {
   fontFamily,
   colors
 } = require('./tailwindcss')
-/*
- ** TailwindCSS Configuration File
- **
- ** Docs: https://tailwindcss.com/docs/configuration
- ** Default: https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js
+
+/**
+ * TailwindCSS Configuration File
+ * @link https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
 
 module.exports = {
