@@ -11,7 +11,6 @@ This is an overview of the `Boilerplate` documentation and related resources.
 - [Project Configuration](project-configuration.md)
 - [Custom Components](custom-components/README.md)
 - [Font Preloading](font-preloading.md)
-- [Global Data](global-data.md)
 
 ## What's included?
 
@@ -40,12 +39,6 @@ Settings → `nuxt/modules/sitemap.js`
 Simple, modern and lightweight font loader for Nuxt projects. [More info](https://github.com/ivodolenc/nuxt-font-loader)
 
 Settings → `nuxt/modules/fontLoader.js`
-
-### Nuxt Global Data
-
-The module allows you to easily inject data and provides a way to share values across the application without having to manually import data into each file. [More info](global-data.md)
-
-Settings → `nuxt/modules/globalData.js`
 
 ### Nuxt LazySizes Module
 

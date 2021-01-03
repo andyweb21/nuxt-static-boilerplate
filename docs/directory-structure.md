@@ -26,10 +26,6 @@ Here is a brief introduction to the project structure.
 ├── middleware/
 ├── mixins/
 ├── modules/
-│   └── globalData/
-├── nuxt/
-│   ├── modules/
-│   └── options/
 ├── pages/
 ├── plugins/
 ├── public/
@@ -78,10 +74,6 @@ Mixins are a flexible way to distribute reusable functionalities for Vue compone
 ## modules
 
 Modules are Nuxt.js extensions which can extend the framework's core functionality and add endless integrations. Once you have installed the modules you can then add them to your nuxt.config.js file under the modules property. [More info](https://nuxtjs.org/docs/2.x/directory-structure/modules)
-
-## nuxt
-
-The nuxt directory is used to manage settings we normally define in the main `nuxt.config.js` file. This makes it easier to organize the code as the project grows.
 
 ## pages
 
