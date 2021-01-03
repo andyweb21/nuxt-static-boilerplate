@@ -116,31 +116,31 @@ export default {
     mediaSm: {
       type: String,
       default() {
-        return `(min-width: ${this.$screens.sm})`
+        return `(min-width: ${this.$config.screens.sm})`
       }
     },
     mediaMd: {
       type: String,
       default() {
-        return `(min-width: ${this.$screens.md})`
+        return `(min-width: ${this.$config.screens.md})`
       }
     },
     mediaLg: {
       type: String,
       default() {
-        return `(min-width: ${this.$screens.lg})`
+        return `(min-width: ${this.$config.screens.lg})`
       }
     },
     mediaXl: {
       type: String,
       default() {
-        return `(min-width: ${this.$screens.xl})`
+        return `(min-width: ${this.$config.screens.xl})`
       }
     },
     mediaXxl: {
       type: String,
       default() {
-        return `(min-width: ${this.$screens._2xl})`
+        return `(min-width: ${this.$config.screens['2xl']})`
       }
     },
 

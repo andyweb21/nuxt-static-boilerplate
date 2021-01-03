@@ -20,13 +20,16 @@ export default {
 
   head() {
     return {
-      title: this.$app.fullTitle,
+      title:
+        this.$config.app.title +
+        this.$config.app.titleSeparator +
+        this.$config.app.titleTemplate,
 
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: this.$app.description
+          content: this.$config.app.description
         }
       ]
     }

@@ -1,10 +1,10 @@
-import { app } from '../config/app'
+import config from '../config'
 
 export const canonical = (_path = []) => {
   return [
     {
       rel: 'canonical',
-      href: app.host + _path
+      href: config.app.url + _path
     }
   ]
 }
@@ -14,37 +14,37 @@ export const facebook = (_path = []) => {
     {
       hid: 'og:title',
       property: 'og:title',
-      content: app.title
+      content: config.app.title
     },
     {
       hid: 'og:description',
       property: 'og:description',
-      content: app.description
+      content: config.app.description
     },
     {
       hid: 'og:type',
       property: 'og:type',
-      content: app.type
+      content: config.app.type
     },
     {
       hid: 'og:site_name',
       property: 'og:site_name',
-      content: app.title
+      content: config.app.title
     },
     {
       hid: 'og:locale',
       property: 'og:locale',
-      content: app.locale
+      content: config.app.locale
     },
     {
       hid: 'og:url',
       property: 'og:url',
-      content: app.host + _path
+      content: config.app.url + _path
     },
     {
       hid: 'og:image',
       property: 'og:image',
-      content: app.host + require('~/assets/images/social/fb.jpg')
+      content: config.app.url + require('~/assets/images/social/fb.jpg')
     }
   ]
 }
@@ -59,17 +59,17 @@ export const twitter = () => {
     {
       hid: 'twitter:title',
       name: 'twitter:title',
-      content: app.title
+      content: config.app.title
     },
     {
       hid: 'twitter:description',
       name: 'twitter:description',
-      content: app.description
+      content: config.app.description
     },
     {
       hid: 'twitter:image:src',
       name: 'twitter:image:src',
-      content: app.host + require('~/assets/images/social/tw.jpg')
+      content: config.app.url + require('~/assets/images/social/tw.jpg')
     }
   ]
 }
@@ -81,9 +81,9 @@ export const appLdJson = (_path = []) => {
       type: 'application/ld+json',
       json: {
         '@context': 'https://schema.org',
-        '@type': app.type,
-        name: app.name,
-        url: app.host + _path,
+        '@type': config.app.type,
+        name: config.app.name,
+        url: config.app.url + _path,
         sameAs: [
           'https://www.facebook.com/',
           'https://www.instagram.com/',

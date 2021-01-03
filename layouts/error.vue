@@ -33,7 +33,7 @@ export default {
         class: 'overflow-hidden'
       },
 
-      title: 'Error' + this.$app.titleSeparator + '404 Not Found'
+      title: 'Error' + this.$config.app.titleSeparator + '404 Not Found'
     }
   }
 }
