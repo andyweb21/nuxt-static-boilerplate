@@ -1,13 +1,5 @@
-import * as app from './app'
-import * as server from './server'
-import * as nuxt from './nuxt'
-import * as screens from './breakpoints'
-import * as utils from './utils'
+const defu = require('defu')
+const defaults = require('./default')
+const environment = require('./' + (process.env.NODE_ENV || 'development'))
 
-export const config = {
-  ...app,
-  ...server,
-  ...nuxt,
-  ...screens,
-  ...utils
-}
+module.exports = defu(environment, defaults)
