@@ -6,7 +6,6 @@
     "*.pcss": "css"
   },
 
-  "eslint.enable": true,
   "eslint.alwaysShowStatus": true,
   "eslint.options": {
     "extensions": [".html", ".js", ".ts", ".vue"]
