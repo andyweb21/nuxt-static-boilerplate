@@ -1,36 +1,60 @@
 module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
 
-  plugins: [],
+  plugins: ['stylelint-scss'],
 
   rules: {
-    'color-named': 'never',
-    'color-no-hex': true,
-
-    'no-empty-source': null,
-
-    'string-no-newline': null,
-
-    'selector-max-universal': 1,
-
-    // TailwindCSS
     'at-rule-no-unknown': [
       true,
       {
         ignoreAtRules: [
-          'tailwind',
-          'apply',
-          'responsive',
-          'media',
-          'screen',
+          'function',
           'mixin',
           'include',
-          'extend'
+          'extend',
+          'return',
+          'if',
+          'else',
+          'each',
+          'for',
+          'at-root',
+          'use',
+          'forward',
+          'debug',
+          'warn'
         ]
       }
     ],
 
-    'declaration-block-trailing-semicolon': null,
-    'no-descending-specificity': null
+    'scss/dollar-variable-colon-space-after': 'always',
+    'scss/dollar-variable-colon-space-before': 'never',
+    'scss/dollar-variable-no-missing-interpolation': true,
+    'scss/dollar-variable-pattern': /^[a-z_0-9-]+$/,
+    'scss/double-slash-comment-whitespace-inside': 'always',
+    'scss/operator-no-newline-before': true,
+    'scss/operator-no-unspaced': true,
+    'scss/selector-no-redundant-nesting-selector': true,
+
+    'scss/at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: [
+          'function',
+          'mixin',
+          'include',
+          'extend',
+          'return',
+          'if',
+          'else',
+          'each',
+          'for',
+          'at-root',
+          'use',
+          'forward',
+          'debug',
+          'warn'
+        ]
+      }
+    ]
   }
 }
