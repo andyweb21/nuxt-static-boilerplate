@@ -9,7 +9,7 @@
 <script>
 import TheHeader from '~/components/templates/TheHeader'
 import TheFooter from '~/components/templates/TheFooter'
-import { canonical, facebook, twitter, appLdJson } from '~/utils/headData'
+import { canonical, facebook, twitter, appLdJson } from '~/utils/getHeadData'
 
 export default {
   components: { TheHeader, TheFooter },

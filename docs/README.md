@@ -20,25 +20,17 @@ This is an overview of the `Boilerplate` documentation and related resources.
 
 Supercharge Nuxt with a heavily tested, updated and stable PWA solution. [More info](https://github.com/nuxt-community/pwa-module)
 
-Settings → `nuxt/modules/pwa.js`
-
 ### Nuxt Robots Module
 
 A Nuxt.js module that inject a middleware to generate a robots.txt file. [More info](https://github.com/nuxt-community/robots-module)
-
-Settings → `nuxt/modules/robots.js`
 
 ### Nuxt Sitemap Module
 
 Automatically generate or serve dynamic sitemap.xml for Nuxt projects. [More info](https://github.com/nuxt-community/sitemap-module)
 
-Settings → `nuxt/modules/sitemap.js`
-
 ### Nuxt Font Loader
 
 Simple, modern and lightweight font loader for Nuxt projects. [More info](https://github.com/ivodolenc/nuxt-font-loader)
-
-Settings → `nuxt/modules/fontLoader.js`
 
 ### Nuxt LazySizes Module
 
@@ -48,17 +40,17 @@ Lazysizes module for Nuxt.js. [More info](https://github.com/ivodolenc/nuxt-lazy
 
 Nuxt module to create new \_headers, \_redirects and netlify.toml files for Netlify or to use existing ones. [More info](https://github.com/nuxt-community/netlify-files-module)
 
-Settings → `nuxt/modules/netlifyFiles.js`
-
 ### Nuxt SVG Module
 
 Super simple svg loading module for Nuxt.js. [More info](https://github.com/nuxt-community/svg-module)
 
-### TailwindCSS
+### Nevo
 
-A utility-first CSS framework for rapid UI development. [More info](https://tailwindcss.com/docs)
+A modern SASS framework for building responsive user interfaces. [More info](https://github.com/ivodolenc/nevo)
 
-Settings → `tailwind.config.js`
+### Nuxt PurgeCSS
+
+Drop superfluous CSS! A neat PurgeCSS wrapper for Nuxt.js [More info](https://github.com/Developmint/nuxt-purgecss)
 
 ## Additional Guides
 

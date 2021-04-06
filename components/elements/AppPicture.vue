@@ -116,31 +116,31 @@ export default {
     mediaSm: {
       type: String,
       default() {
-        return `(min-width: ${this.$config.screens.sm})`
+        return `(min-width: ${this.$config.breakpoints.sm})`
       }
     },
     mediaMd: {
       type: String,
       default() {
-        return `(min-width: ${this.$config.screens.md})`
+        return `(min-width: ${this.$config.breakpoints.md})`
       }
     },
     mediaLg: {
       type: String,
       default() {
-        return `(min-width: ${this.$config.screens.lg})`
+        return `(min-width: ${this.$config.breakpoints.lg})`
       }
     },
     mediaXl: {
       type: String,
       default() {
-        return `(min-width: ${this.$config.screens.xl})`
+        return `(min-width: ${this.$config.breakpoints.xl})`
       }
     },
     mediaXxl: {
       type: String,
       default() {
-        return `(min-width: ${this.$config.screens['2xl']})`
+        return `(min-width: ${this.$config.breakpoints.xxl})`
       }
     },
 

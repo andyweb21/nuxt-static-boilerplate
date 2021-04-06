@@ -11,14 +11,12 @@ Here is a brief introduction to the project structure.
 │   │   └── social/
 │   └── styles/
 │       ├── base/
-│       ├── components/
+│       ├── settings/
 │       └── utilities/
 ├── components/
 │   ├── blocks/
 │   ├── common/
 │   ├── elements/
-│   │   ├── headings/
-│   │   └── icons/
 │   └── templates/
 ├── config/
 ├── docs/
@@ -32,7 +30,6 @@ Here is a brief introduction to the project structure.
 │   ├── fonts/
 │   └── images/
 ├── store/
-├── tailwindcss/
 ├── templates/
 ├── utils/
 │
@@ -90,10 +87,6 @@ The public directory is directly mapped to the server root and contains files th
 ## store
 
 The store directory contains your Vuex Store files. The Vuex Store comes with Nuxt.js out of the box but is disabled by default. Creating an index.js file in this directory enables the store. [More info](https://nuxtjs.org/docs/2.x/directory-structure/store)
-
-## tailwindcss
-
-The tailwindcss directory is used to manage settings we normally define in the main `tailwind.config.js` file. Each option in a separate file. [More info](https://tailwindcss.com/docs/configuration)
 
 ## templates
 

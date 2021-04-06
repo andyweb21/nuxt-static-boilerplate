@@ -1,15 +1,15 @@
 import config from '../config'
 
-export const canonical = (_path = []) => {
+export const canonical = (path = []) => {
   return [
     {
       rel: 'canonical',
-      href: config.app.url + _path
+      href: config.app.url + path
     }
   ]
 }
 
-export const facebook = (_path = []) => {
+export const facebook = (path = []) => {
   return [
     {
       hid: 'og:title',
@@ -39,7 +39,7 @@ export const facebook = (_path = []) => {
     {
       hid: 'og:url',
       property: 'og:url',
-      content: config.app.url + _path
+      content: config.app.url + path
     },
     {
       hid: 'og:image',
@@ -74,7 +74,7 @@ export const twitter = () => {
   ]
 }
 
-export const appLdJson = (_path = []) => {
+export const appLdJson = (path = []) => {
   return [
     {
       hid: 'application/ld+json',
@@ -83,7 +83,7 @@ export const appLdJson = (_path = []) => {
         '@context': 'https://schema.org',
         '@type': config.app.type,
         name: config.app.name,
-        url: config.app.url + _path,
+        url: config.app.url + path,
         sameAs: [
           'https://www.facebook.com/',
           'https://www.instagram.com/',

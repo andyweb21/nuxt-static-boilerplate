@@ -10,12 +10,8 @@ Elements are the basic building HTML elements. They can be used more than once _
 
 - [Button](elements/button.md)
 - [Container](elements/container.md)
-- [Headings](elements/headings.md)
-- [Icons](elements/icons.md)
 - [Image](elements/image.md)
 - [Link](elements/link.md)
-- [List](elements/list.md)
-- [Paragraph](elements/paragraph.md)
 - [Responsive Picture](elements/picture.md)
 - [Section](elements/section.md)
 - [Svg](elements/svg.md)

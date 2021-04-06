@@ -1,5 +1,4 @@
 import config from './config'
-import routeTransition from './utils/routeTransition'
 
 export default {
   target: 'static',
@@ -27,9 +26,14 @@ export default {
 
   modules: ['@nuxtjs/pwa', '@nuxtjs/svg', '@nuxtjs/robots', '@nuxtjs/sitemap'],
 
-  buildModules: ['@nuxtjs/netlify-files', 'nuxt-font-loader', 'nuxt-lazysizes'],
+  buildModules: [
+    '@nuxtjs/netlify-files',
+    'nuxt-font-loader',
+    'nuxt-lazysizes',
+    'nuxt-purgecss'
+  ],
 
-  css: ['~/assets/styles/app.pcss'],
+  css: ['~/assets/styles/app.scss'],
 
   plugins: [
     // '~/plugins/plugin.js', '~/plugins/plugin.client.js'
@@ -41,13 +45,11 @@ export default {
   layoutTransition: {
     name: 'layout',
     mode: 'out-in'
-    // ...routeTransition
   },
 
   pageTransition: {
     name: 'page',
-    mode: 'out-in',
-    ...routeTransition
+    mode: 'out-in'
   },
 
   head: {
@@ -129,13 +131,6 @@ export default {
           : `${config.nuxt.filename.video}/[contenthash:7].[ext]`
     },
 
-    postcss: {
-      plugins: {
-        'postcss-import': true,
-        tailwindcss: 'tailwind.config.js'
-      }
-    },
-
     templates: [
       {
         src: 'templates/app.html',
@@ -175,7 +170,7 @@ export default {
       description: config.app.description,
       type: config.app.type
     },
-    screens: config.breakpoints
+    breakpoints: config.breakpoints
   },
 
   privateRuntimeConfig: {},
@@ -290,5 +285,12 @@ export default {
 
   fontLoader: {
     url: '/fonts/font-face.css'
+  },
+
+  purgeCSS: {
+    whitelistPatterns: [
+      /^link(|-exact)-active$/, // Nuxt link classes
+      /^lazy(load|loading|loaded)$/ // Lazysizes
+    ]
   }
 }
