@@ -152,6 +152,12 @@ export default {
       }
 
       vue.transformAssetUrls = transformAssetUrlsSettings
+    },
+
+    // Temp fix for babel "loose" console warnings
+    // https://github.com/nuxt/nuxt.js/issues/9224
+    babel: {
+      plugins: [['@babel/plugin-proposal-private-methods', { loose: true }]]
     }
   },
 
