@@ -1,5 +1,9 @@
-const defu = require('defu')
-const defaults = require('./default')
-const environment = require('./' + (process.env.NODE_ENV || 'development'))
+import defu from 'defu'
+import defaults from './default'
+import development from './development'
+import production from './production'
 
-module.exports = defu(environment, defaults)
+const environment = defaults.isDev ? development : production
+const config = defu({}, environment, defaults)
+
+export default config

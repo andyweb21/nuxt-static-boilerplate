@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   isDev: process.env.NODE_ENV === 'development',
 
   nuxt: {
