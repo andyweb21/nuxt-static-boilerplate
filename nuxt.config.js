@@ -238,11 +238,6 @@ export default {
     copyExistingFiles: false,
 
     netlifyToml: {
-      build: {
-        publish: 'dist',
-        command: 'npm run generate'
-      },
-
       headers: [
         {
           for: '/*',
