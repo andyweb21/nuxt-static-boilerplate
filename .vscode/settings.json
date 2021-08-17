@@ -11,6 +11,7 @@
     "extensions": [".html", ".js", ".ts", ".vue"]
   },
 
+  "vetur.validation.template": false,
   "vetur.format.defaultFormatter.html": "none",
   "vetur.format.defaultFormatter.css": "none",
   "vetur.format.defaultFormatter.scss": "none",
