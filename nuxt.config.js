@@ -22,18 +22,18 @@ export default {
     host: config.server.hostname
   },
 
-  watch: ['~/config/*', '~/modules/**'],
+  watch: ['@/config/*', '@/modules/**', '@/unocss.config.js'],
 
   modules: ['@nuxtjs/pwa', '@nuxtjs/svg', '@nuxtjs/robots', '@nuxtjs/sitemap'],
 
   buildModules: [
+    '@unocss/nuxt',
     '@nuxtjs/netlify-files',
     'nuxt-font-loader',
-    'nuxt-lazysizes',
-    'nuxt-purgecss'
+    'nuxt-lazysizes'
   ],
 
-  css: ['~/assets/styles/app.scss'],
+  css: ['~/assets/styles/main.css'],
 
   plugins: [
     // '~/plugins/plugin.js', '~/plugins/plugin.client.js'
@@ -96,9 +96,7 @@ export default {
   },
 
   router: {
-    trailingSlash: true,
-    linkActiveClass: 'link-active',
-    linkExactActiveClass: 'link-exact-active'
+    trailingSlash: true
   },
 
   build: {
@@ -138,21 +136,19 @@ export default {
       }
     ],
 
-    extend(config, { loaders: { vue } }) {
-      const transformAssetUrlsSettings = {
-        'app-picture': [
-          'url',
-          'url-sm',
-          'url-md',
-          'url-lg',
-          'url-xl',
-          'url-xxl'
-        ],
-        'app-img': ['url']
+    postcss: {
+      plugins: {
+        'postcss-import': true
       }
-
-      vue.transformAssetUrls = transformAssetUrlsSettings
     }
+
+    // postcss: {
+    //   plugins: {
+    //     'postcss-import': true,
+    //     tailwindcss: {},
+    //     autoprefixer: {}
+    //   }
+    // }
   },
 
   generate: {
@@ -282,10 +278,9 @@ export default {
     url: '/fonts/font-face.css'
   },
 
-  purgeCSS: {
-    whitelistPatterns: [
-      /^link(|-exact)-active$/, // Nuxt link classes
-      /^lazy(load|loading|loaded)$/ // Lazysizes
-    ]
+  unocss: {
+    uno: false, // disable '@unocss/preset-uno'
+    wind: true, // enable '@unocss/preset-wind'
+    preflight: true // enable 'base' styles
   }
 }
