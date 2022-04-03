@@ -9,7 +9,6 @@ This is an overview of the `Boilerplate` documentation and related resources.
 - [Server Configuration](server-configuration.md)
 - [Commands and Deployment](commands-and-deployment.md)
 - [Project Configuration](project-configuration.md)
-- [Custom Components](custom-components/README.md)
 - [Font Preloading](font-preloading.md)
 
 ## What's included?
@@ -44,13 +43,9 @@ Nuxt module to create new \_headers, \_redirects and netlify.toml files for Netl
 
 Super simple svg loading module for Nuxt.js. [More info](https://github.com/nuxt-community/svg-module)
 
-### Nevo
+### UnoCSS
 
-A modern SASS framework for building responsive user interfaces. [More info](https://github.com/ivodolenc/nevo)
-
-### Nuxt PurgeCSS
-
-Drop superfluous CSS! A neat PurgeCSS wrapper for Nuxt.js [More info](https://github.com/Developmint/nuxt-purgecss)
+The instant on-demand atomic CSS engine. [More info](https://github.com/unocss/unocss)
 
 ## Additional Guides
 

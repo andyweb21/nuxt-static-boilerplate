@@ -10,14 +10,7 @@ Here is a brief introduction to the project structure.
 │   ├── images/
 │   │   └── social/
 │   └── styles/
-│       ├── base/
-│       ├── settings/
-│       └── utilities/
 ├── components/
-│   ├── blocks/
-│   ├── common/
-│   ├── elements/
-│   └── templates/
 ├── config/
 ├── docs/
 ├── layouts/

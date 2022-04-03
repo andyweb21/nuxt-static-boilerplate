@@ -30,7 +30,7 @@ $ cd <project-name>
 $ npm install # or yarn
 ```
 
-#### That's it! Start developing your app ✨
+#### That's it! Start developing your app!
 
 ---
 

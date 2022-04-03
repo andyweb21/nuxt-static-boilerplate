@@ -1,5 +1,5 @@
 <p align="center">
-    <img src=".github/assets/cover.svg">
+    <img src=".github/assets/cover22.svg">
 </p>
 <h1 >Nuxt Static Boilerplate</h1>
 A well-organized Nuxt template for creating fast static applications.
@@ -13,7 +13,6 @@ A well-organized Nuxt template for creating fast static applications.
 - Offers you powerful built-in solutions such as `lazy-loading`, `font-preloading`, `global data`, `SEO` etc. 💪
 - Supports modern workflow and build tools like `prettier`, `eslint`, `stylelint` etc. ⚙️
 - Helps you `organize` files and folders with an updated structure 📁
-- Comes with integrated `Nevo` framework
 
 ## Quick Start
 
@@ -32,14 +31,14 @@ $ cd <project-name>
 3. Install all dependencies:
 
 ```sh
-$ npm install # or yarn
+$ yarn # or npm i
 ```
 
-That's it! Start developing your app ✨
+That's it! Start developing your app!
 
 ## Documentation
 
-Project details can be found in the 📘 [docs](docs/README.md) folder.
+Project details can be found in the [docs](docs/README.md) folder.
 
 ## License
 
