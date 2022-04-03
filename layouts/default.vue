@@ -1,29 +1,32 @@
 <template>
   <div id="__default">
-    <the-header />
-    <nuxt />
-    <the-footer />
+    <NavigationMain />
+    <Nuxt />
   </div>
 </template>
 
 <script>
-import TheHeader from '~/components/templates/TheHeader'
-import TheFooter from '~/components/templates/TheFooter'
-import { canonical, facebook, twitter, appLdJson } from '~/utils/getHeadData'
+import NavigationMain from '@/components/NavigationMain'
+import {
+  useCanonical,
+  useFacebook,
+  useTwitter,
+  useAppLdJson
+} from '@/utils/useHeadData'
 
 export default {
-  components: { TheHeader, TheFooter },
+  components: {
+    NavigationMain
+  },
 
   head() {
     const { path } = this.$route
     const pathWithSlash = path.endsWith('/') ? path : `${path}/`
 
     return {
-      meta: [...facebook(pathWithSlash), ...twitter()],
-
-      link: [...canonical(pathWithSlash)],
-
-      script: [...appLdJson(pathWithSlash)]
+      meta: [...useFacebook(pathWithSlash), ...useTwitter()],
+      link: [...useCanonical(pathWithSlash)],
+      script: [...useAppLdJson(pathWithSlash)]
     }
   }
 }

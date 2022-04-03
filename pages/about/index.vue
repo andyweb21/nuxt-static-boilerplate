@@ -1,17 +1,16 @@
 <template>
   <main>
-    <div class="max-w-screen-md">
-      <!-- Non-responsive example -->
-      <app-img aspect-ratio="40:21" url="~/assets/images/social/fb.jpg" />
-    </div>
+    <TitlePage label="About" />
   </main>
 </template>
 
 <script>
-import AppImg from '~/components/elements/AppPicture'
+import TitlePage from '@/components/TitlePage'
 
 export default {
-  components: { AppImg },
+  components: {
+    TitlePage
+  },
 
   head() {
     return {
