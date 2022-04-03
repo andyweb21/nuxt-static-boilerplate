@@ -2,3 +2,4 @@ node_modules
 .github
 .nuxt
 dist
+unocss.config.js
