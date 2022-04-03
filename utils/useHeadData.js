@@ -1,6 +1,6 @@
 import config from '../config'
 
-export const canonical = (path = []) => {
+export const useCanonical = (path = []) => {
   return [
     {
       rel: 'canonical',
@@ -9,7 +9,7 @@ export const canonical = (path = []) => {
   ]
 }
 
-export const facebook = (path = []) => {
+export const useFacebook = (path = []) => {
   return [
     {
       hid: 'og:title',
@@ -49,7 +49,7 @@ export const facebook = (path = []) => {
   ]
 }
 
-export const twitter = () => {
+export const useTwitter = () => {
   return [
     {
       hid: 'twitter:card',
@@ -74,7 +74,7 @@ export const twitter = () => {
   ]
 }
 
-export const appLdJson = (path = []) => {
+export const useAppLdJson = (path = []) => {
   return [
     {
       hid: 'application/ld+json',
