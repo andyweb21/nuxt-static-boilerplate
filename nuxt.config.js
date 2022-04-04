@@ -35,23 +35,6 @@ export default {
 
   css: ['~/assets/styles/main.css'],
 
-  plugins: [
-    // '~/plugins/plugin.js', '~/plugins/plugin.client.js'
-  ],
-
-  /**
-   * @link https://github.com/nuxt/nuxt.js/issues/6028
-   */
-  layoutTransition: {
-    name: 'layout',
-    mode: 'out-in'
-  },
-
-  pageTransition: {
-    name: 'page',
-    mode: 'out-in'
-  },
-
   head: {
     htmlAttrs: {
       lang: config.app.lang
@@ -141,14 +124,6 @@ export default {
         'postcss-import': true
       }
     }
-
-    // postcss: {
-    //   plugins: {
-    //     'postcss-import': true,
-    //     tailwindcss: {},
-    //     autoprefixer: {}
-    //   }
-    // }
   },
 
   generate: {
@@ -168,8 +143,6 @@ export default {
     },
     breakpoints: config.breakpoints
   },
-
-  privateRuntimeConfig: {},
 
   pwa: {
     icon: {
@@ -279,8 +252,8 @@ export default {
   },
 
   unocss: {
-    uno: false, // disable '@unocss/preset-uno'
-    wind: true, // enable '@unocss/preset-wind'
-    preflight: true // enable 'base' styles
+    uno: false,
+    wind: true,
+    preflight: true
   }
 }
